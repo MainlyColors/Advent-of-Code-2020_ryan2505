@@ -54,9 +54,6 @@ function keyFinder(str) {
 
 //takes string and returns true if exactly one letter matches the index location
 function vaildPasswordParser(arrRange, letterKey, password) {
-  const trialArrRange = arrRange;
-  const trialKey = letterKey;
-  const trialPassword = password;
   if (password.charAt(arrRange[0] - 1) === letterKey && password.charAt(arrRange[1] - 1) === letterKey) {
     return "invalid";
   } else if (password.charAt(arrRange[0] - 1) === letterKey) {
